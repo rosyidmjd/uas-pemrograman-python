@@ -38,7 +38,7 @@ def handle(client):
 def receive():
     while True:
         client, address = server.accept()
-        print(f'Connecterd with {str(address)}')
+        print(f'Terkoneksi dengan IP : {str(address)}')
 
         client.send('NAMA' .encode('ascii'))
 
